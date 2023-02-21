@@ -1,9 +1,10 @@
-import React from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import RightArrowSvg from '@site/static/img/fast_forward.svg';
+import Layout from '@theme/Layout';
+import clsx from 'clsx';
+import React from 'react';
 
 import styles from './index.module.css';
 
@@ -18,7 +19,10 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            <div className={styles.guidesContainer}>
+							<span>Guides</span>
+							<RightArrowSvg className={styles.rightArrow}/>
+						</div>
           </Link>
         </div>
       </div>
@@ -27,10 +31,9 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title="Homepage"
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

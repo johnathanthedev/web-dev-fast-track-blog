@@ -21,3 +21,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.rightArrow {
+	width: 20px;
+	height: 20px;
+	margin-left: 1rem;
+}
+
+.guidesContainer {
+	display: flex;
+	align-items: center;
+}
