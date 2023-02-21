@@ -1,1 +1,1 @@
-# web-dev-fast-track-blog
+# Web Dev Fast Track Blog
